@@ -1,5 +1,6 @@
 import React from 'react';
 import profilePic from '../images/me.jpg'
+
 const imageStyle = {width: '150px' }
 const divStyle = {width: '80%', margin: '0 auto' }
 export default function About() {

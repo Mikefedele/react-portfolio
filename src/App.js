@@ -1,9 +1,16 @@
 import React from "react";
 import PortfolioContainer from "./components/PortfolioContainer";
-
-// import './App.css';
+import NavTabs from "./components/NavTabs";
+import Header from "./components/header";
+import "./App.css";
 //todo get from portfolio container export for index
-const App = () => <PortfolioContainer />;
+export default function name() {
+  return (
+    <div>
+      <Header />
+      <PortfolioContainer />
+    </div>
+  );
+}
 
-
-export default App;
+// export default App;
