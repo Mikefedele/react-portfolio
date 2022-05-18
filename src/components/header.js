@@ -11,11 +11,12 @@ const headerStyle = {
 
 }
 
-export default function Header() {
+export default function Header({currentPage, handlePageChange}) {
   return (
     <header className="header" style={headerStyle}>
       <h2>Full Stack Fedele</h2>
-     {/* <NavTabs {NavTabs} /> */}
+      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+
     </header>
   )
 }

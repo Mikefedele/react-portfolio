@@ -6,6 +6,8 @@ import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
+
 //todo send app to index
 ReactDOM.render(<App />, document.getElementById('root'));
 

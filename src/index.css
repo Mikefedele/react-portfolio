@@ -1,1 +1,48 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
+#header {
+  background: fixed;
+
+}
+
+/* Everything is a child of this node, so set its height to take up the full page or more, then set some padding at the bottom so your footer can slip into the gap. */
+#root {
+  position: relative;
+  height: 100%;
+  
+}
+
+/* .card {
+  box-shadow: 5px 10px 8px #888888;
+    border: 2px solid black;
+    margin: 10px;
+
+} */
+
+.main {
+  text-align: center;
+  position: relative;
+  padding-bottom: 40px;  
+  min-height: 100vh;
+  font-family: 'Vesper Libre', serif;
+  /* font-family: 'Oswald', sans-serif; */
+  font-weight:600;
+  font-size: large;
+  padding: 20 0 0 0;
+}
+
+/* Now set the height of your Footer equal to the padding that you left for it in your #root.  To make it stay at the bottom, you will set it to be absolutely positioned.  If Main grows larger, your Footer will move down to remain at the bottom of the page. */ 
+.footer {
+  height: 20px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+a {
+  /* text-decoration: wavy; */
+}
