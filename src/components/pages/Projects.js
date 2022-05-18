@@ -2,39 +2,43 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import ProjectCard from "../projectCard";
 import codeBG from "../images/codeBG.jpg";
-const divStyle = { width: "80%", margin: "0 auto" };
-const tempStyle = { border: "1px solid black" };
+import mealPlan from "../images/mealPlanner.png"
+import sched from "../images/noteApp.png"
+import submit from "../images/submitRocket.png"
+const divStyle = { width: "80%", margin: "0 auto",    
+};
+const tempStyle = { border: "1px solid black", backgroundImage: 'linear-gradient(white, black)'};
 
 export default function Blog() {
   const projectObject = [{
-    title: 'titleOne', 
-    img: codeBG,
+    title: 'Daily Meal Planner', 
+    img: mealPlan,
     deployedLink: 'https://www.google.com',
-    codeLink: 'http://github.com'
+    codeLink: ''
 
   },{
-    title: 'titleTwo', 
+    title: 'Social Media API', 
     img: codeBG,
-    deployedLink: 'https://www.google.com',
-    codeLink: 'http://github.com'
+    deployedLink: 'https://watch.screencastify.com/v/16c3DsNf7iGHcedQ85W9',
+    codeLink: 'https://github.com/Mikefedele/socialNetworkAPI'
 
   },{
-    title: 'titleThree', 
-    img: codeBG,
-    deployedLink: 'https://www.google.com',
-    codeLink: 'http://github.com'
+    title: 'Submit Rocket', 
+    img: submit,
+    deployedLink: 'https://submit-rocket.herokuapp.com/',
+    codeLink: 'https://github.com/Mikefedele/SubmitRocket'
 
   },{
-    title: 'titleFour', 
-    img: codeBG,
-    deployedLink: 'https://www.google.com',
-    codeLink: 'http://github.com'
+    title: 'Note Taker App', 
+    img: sched,
+    deployedLink: 'https://damp-fjord-83925.herokuapp.com/',
+    codeLink: 'https://github.com/Mikefedele/Note-Taker-App'
 
   },{
-    title: 'titleFive', 
+    title: 'E-commerce Backend', 
     img: codeBG,
-    deployedLink: 'https://www.google.com',
-    codeLink: 'http://github.com'
+    deployedLink: 'https://watch.screencastify.com/v/Iuokh0NtPGSTLv0jH4fI',
+    codeLink: 'https://github.com/Mikefedele/Ecomm-Backend'
 
   },{
     title: 'titleSix', 

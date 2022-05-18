@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Stack from "react-bootstrap/Stack";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import { DiJavascript } from "react-icons/di";
 
 const divStyle = { width: "80%", margin: "0 auto" };
 const tempStyle = { border: "1px solid black", height: "150px" };
@@ -34,8 +34,8 @@ export default function Resume() {
             <li>React</li>
             <li>Responsive Design</li>
             <li>Bootstrap, Tailwind</li>
-            <FontAwesomeIcon icon="fa-brands fa-js-square" />
-            {/* <li>< FontAwesomeIcon icon="fa-brands fa-js-square" />JavaScript</li><i class="fa-brands fa-github-square"></i>             */}
+            {/* <FontAwesomeIcon icon="fa-brands fa-js-square" /> */}
+            <li><DiJavascript/>  JavaScript</li>            
           </ul>
           <ul>
             <h5>Backend Experience</h5>

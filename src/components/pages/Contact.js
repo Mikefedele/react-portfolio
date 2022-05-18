@@ -4,7 +4,7 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
 const formStyle = { display: "block" };
-const divStyle = { width: "80%", margin: "0 auto" };
+const divStyle = {  margin: "0 auto", backgroundImage: 'linear-gradient(white, black)', minHeight: '100vh'};
 let nameValue = ""
 
 export default function Contact() {
@@ -33,6 +33,7 @@ export default function Contact() {
   return (
     <div style={divStyle}>
       <h1>Contact Page</h1>
+
       <form ref={form} onSubmit={sendEmail} style={formStyle}>
         <Stack gap={1} className="col-md-5 mx-auto">
           <label>Name</label>

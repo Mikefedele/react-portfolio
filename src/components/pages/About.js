@@ -1,20 +1,27 @@
-import React from 'react';
-import profilePic from '../images/me.jpg'
+import React from "react";
+import profilePic from "../images/me.jpg";
 
-const imageStyle = {width: '150px' }
-const divStyle = {width: '80%', margin: '0 auto' }
+const imageStyle = { width: "150px", float: "left", padding: '0 "20px" "20px" 0' };
+const divStyle = { width: "80%", margin: "0 auto" };
+const left = { float: "left", padding: '0 "20px" "20px" 0'}
 export default function About() {
   return (
     <div style={divStyle}>
       <h1>About Page</h1>
-      <img src= {profilePic} alt= "pic of me" style={imageStyle}/>
+      <img src={profilePic} alt="pic of me" style={imageStyle} />
       <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+        Hi! Thank you for visiting my site. My name is Mike Fedele & I'm a full
+        stack web developer. It was during the shutdowns for covid that I
+        realized how much I enjoyed coding. My front-end skills include{" "}
+        <em>HTML, CSS, Javascript & REACT</em> using multiple frameworks. On the
+        back-end I have experience with <em>NodeJS, Express, Mysql & nosql.</em>{" "}
+        This includes best practices for data management, file structures,
+        security & testing.
+      </p>
+      <p>
+        Pre-Covid I ran a photo/video booth company for nearly 10 years. I
+        managed multiple part time employees and handled every aspect of running
+        the business.
       </p>
     </div>
   );
