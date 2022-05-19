@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+// import Form from "react-bootstrap/Form";
+// import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
 const formStyle = { display: "block" };
 const divStyle = {  margin: "0 auto", backgroundImage: 'linear-gradient(white, black)', minHeight: '100vh'};
@@ -18,7 +18,6 @@ export default function Contact() {
     }
     
   }
-  // <input type="text" onblur="myFunction()"></input>
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -56,6 +55,7 @@ export default function Contact() {
         </Stack>        
       </form>
 
+    
     <div>{blur}</div>
 
 

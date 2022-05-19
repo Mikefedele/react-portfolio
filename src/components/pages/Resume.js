@@ -1,13 +1,11 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+// import Row from "react-bootstrap/Row";
+// import Col from "react-bootstrap/Col";
 import Stack from "react-bootstrap/Stack";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { DiJavascript } from "react-icons/di";
 
 const divStyle = { width: "80%", margin: "0 auto" };
-const tempStyle = { border: "1px solid black", height: "150px" };
 const textStyle = { textDecoration: "none", color: "black" };
 
 const liStyle = {listStyleType: "none"}

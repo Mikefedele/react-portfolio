@@ -2,9 +2,12 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import ProjectCard from "../projectCard";
 import codeBG from "../images/codeBG.jpg";
-import mealPlan from "../images/mealPlanner.png"
-import sched from "../images/noteApp.png"
-import submit from "../images/submitRocket.png"
+import mealPlan from "../images/mealPlanner.png";
+import sched from "../images/noteApp.png";
+import submit from "../images/submitRocket.png";
+import jate from "../images/jate.png"
+
+
 const divStyle = { width: "80%", margin: "0 auto",    
 };
 const tempStyle = { border: "1px solid black", backgroundImage: 'linear-gradient(white, black)', paddingBottom: "10px"};
@@ -13,8 +16,8 @@ export default function Blog() {
   const projectObject = [{
     title: 'Daily Meal Planner', 
     img: mealPlan,
-    deployedLink: 'https://www.google.com',
-    codeLink: ''
+    deployedLink: 'https://mikefedele.github.io/daily-meal-planner/',
+    codeLink: 'https://github.com/Mikefedele/daily-meal-planner'
 
   },{
     title: 'Social Media API', 
@@ -42,8 +45,8 @@ export default function Blog() {
 
   },{
     title: 'JATE-PWA', 
-    img: codeBG,
-    deployedLink: 'https://www.google.com',
+    img: jate,
+    deployedLink: 'https://thawing-refuge-14540.herokuapp.com/',
     codeLink: 'https://github.com/Mikefedele/text-editor-pwa'
 
   }]
