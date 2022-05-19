@@ -7,7 +7,7 @@ import sched from "../images/noteApp.png"
 import submit from "../images/submitRocket.png"
 const divStyle = { width: "80%", margin: "0 auto",    
 };
-const tempStyle = { border: "1px solid black", backgroundImage: 'linear-gradient(white, black)'};
+const tempStyle = { border: "1px solid black", backgroundImage: 'linear-gradient(white, black)', paddingBottom: "10px"};
 
 export default function Blog() {
   const projectObject = [{
@@ -41,10 +41,10 @@ export default function Blog() {
     codeLink: 'https://github.com/Mikefedele/Ecomm-Backend'
 
   },{
-    title: 'titleSix', 
+    title: 'JATE-PWA', 
     img: codeBG,
     deployedLink: 'https://www.google.com',
-    codeLink: 'http://github.com'
+    codeLink: 'https://github.com/Mikefedele/text-editor-pwa'
 
   }]
   return (
@@ -55,6 +55,12 @@ export default function Blog() {
          <ProjectCard title={title} img={img} deployedLink={deployedLink} codeLink={codeLink} key = {title}/>
        ))}
       </Container>
+      <Container>
+        {/* <p>Click on the images to see the deployed site. If the</p>
+        <p style={{lineHeight: 1.5}}><em>To see a full list of my repositories, visit my Github Page by clicking the link below.</em></p> */}
+      
+      </Container>
     </div>
+  
   );
 }

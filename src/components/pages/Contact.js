@@ -10,6 +10,16 @@ let nameValue = ""
 export default function Contact() {
   const form = useRef();
 
+  const blur = () => {
+    if (nameValue.value) {
+      return
+    } else {
+      <p>Input field can't be left blank</p>
+    }
+    
+  }
+  // <input type="text" onblur="myFunction()"></input>
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -34,17 +44,21 @@ export default function Contact() {
     <div style={divStyle}>
       <h1>Contact Page</h1>
 
-      <form ref={form} onSubmit={sendEmail} style={formStyle}>
+      <form ref={form} onSubmit={sendEmail} style={formStyle} onBlur={blur}>
         <Stack gap={1} className="col-md-5 mx-auto">
           <label>Name</label>
-          <input type="text" name="user_name"/>
+          <input type="text" name="user_name" onBlur={blur}/>
           <label>Email</label>
-          <input type="email" name="user_email" />
+          <input type="email" name="user_email" onBlur={blur} />
           <label>Message</label>
-          <textarea name="message" />
+          <textarea name="message" onBlur={blur}/>
           <input type="submit" value="Send" />
-        </Stack>
+        </Stack>        
       </form>
+
+    <div>{blur}</div>
+
+
       {/* <Form ref={form} onSubmit={sendEmail}>
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <Form.Label>Name</Form.Label>

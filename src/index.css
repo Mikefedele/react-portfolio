@@ -9,6 +9,9 @@
   padding-bottom: 10px;
   border-bottom: 3px solid black;
 }
+.card-img-top:hover {
+  opacity: 0.8;
+}
 
 #header {
   background: fixed;
@@ -30,6 +33,19 @@
     margin: 10px;
 
 } */
+i {
+  margin: 10px;
+  color: black;
+
+}
+i:hover {
+  color: blue;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
 
 .main {
   text-align: center;

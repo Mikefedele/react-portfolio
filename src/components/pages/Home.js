@@ -8,7 +8,7 @@ const divStyle = { width: "80%", margin: "0 auto" };
 export default function Home() {
   return (
     <div style={divStyle}>
-      <h1>Home Page</h1>
+      {/* <h1>Home Page</h1> */}
       <Container>
         <Col md={{ span: 6, offset: 3 }}>
           <h2>Mike Fedele</h2>

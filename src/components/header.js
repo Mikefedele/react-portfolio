@@ -10,7 +10,7 @@ const headerStyle = {
     backgroundImage: 'linear-gradient(white, black)',
     marginBottom: '10px'
 }
-const titleStyle = {  textAlign: "right", marginRight: "15%", marginTop: "10px" }
+const titleStyle = {  textAlign: "right", marginRight: "15%", marginTop: "10px"  }
 
 export default function Header({currentPage, handlePageChange}) {
   return (

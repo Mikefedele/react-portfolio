@@ -1,7 +1,9 @@
 import React from 'react';
 
-// TODO: Add a comment explaining how we are able to extract the key value pairs from props
+
 // const navStyle = {width: '50%'}
+
+//Destructure props object to pluck off our variables & assign them
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <ul className="nav nav-tabs" >
@@ -9,8 +11,8 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="#home"
           onClick={() => handlePageChange('Home')}
-          //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
-
+//todo set ternary for pages
+//*  'nav-link active' class from bootstrap use className
           className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}
         >
           Home
@@ -20,7 +22,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
-          //  TODO: Add a comment explaining what this logic is doing
+          
 
           className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
         >
@@ -31,7 +33,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         <a
           href="#projects"
           onClick={() => handlePageChange('Projects')}
-          //  TODO: Add a comment explaining what this logic is doing
+         
 
           className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
         >

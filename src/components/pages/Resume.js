@@ -10,6 +10,7 @@ const divStyle = { width: "80%", margin: "0 auto" };
 const tempStyle = { border: "1px solid black", height: "150px" };
 const textStyle = { textDecoration: "none", color: "black" };
 
+const liStyle = {listStyleType: "none"}
 export default function Resume() {
   // const link = window.location.replace('https://docs.google.com/document/d/1zbM5Wy1UoQNvrG1xQIR8-ivxTUCnOHAai11cyikFcGM/edit?usp=sharing')
 
@@ -27,18 +28,18 @@ export default function Resume() {
             🎉
           </p>
           <row>
-          <ul>
-            <h5>Front-end experience</h5>
+          <ul style={liStyle}>
+            <h5 style={{fontSize: 'larger', textDecoration: 'underline'}}>Front end experience</h5>
             <li>HTML</li>
             <li>CSS</li>
             <li>React</li>
             <li>Responsive Design</li>
             <li>Bootstrap, Tailwind</li>
-            {/* <FontAwesomeIcon icon="fa-brands fa-js-square" /> */}
-            <li><DiJavascript/>  JavaScript</li>            
+            <li><DiJavascript/>  JavaScript</li>       
+            <li>Progressive Web Applications</li>     
           </ul>
-          <ul>
-            <h5>Backend Experience</h5>
+          <ul style={liStyle}>
+            <h5 style={{fontSize: 'larger', textDecoration: 'underline'}}>Back end Experience</h5>
             <li>NodeJS</li>
             <li>APIs</li>
             <li>Express</li>

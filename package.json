@@ -2,7 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mikefedele.github .io/react-profile",
+  "homepage": "https://mikefedele.github.io/react-profile",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@fortawesome/fontawesome-free": "^6.1.1",
