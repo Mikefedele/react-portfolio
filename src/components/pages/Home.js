@@ -7,10 +7,10 @@ const divStyle = { width: "80%", margin: "0 auto" };
 
 export default function Home() {
   return (
-    <div style={divStyle}>
+    <div style={divStyle} className= "home">
       {/* <h1>Home Page</h1> */}
       <Container>
-        <Col md={{ span: 6, offset: 3 }}>
+        <Col md={{ span: 6, offset: 3 }} className="home">
           <h2>Mike Fedele</h2>
           <h3>Full Stack Web Developer</h3>
         </Col>

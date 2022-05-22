@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 // import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
 const formStyle = { display: "block" };
-const divStyle = {  margin: "0 auto", backgroundImage: 'linear-gradient(white, black)', minHeight: '100vh'};
+const divStyle = {  margin: "0 auto", backgroundImage: 'linear-gradient(white, black)', minHeight: '100vh', width: "80%", color: "black"};
 let nameValue = ""
 
 export default function Contact() {

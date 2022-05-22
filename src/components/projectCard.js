@@ -5,7 +5,8 @@ import {BsGithub} from "react-icons/bs"
 const cardStyle = {boxShadow: '5px 10px 8px #888888',
   border: '2px solid black',
   margin: '10px',
-  width: '18rem'
+  width: '18rem',
+  color: 'black'
 }
 
 export default function ProjectCard(props)  {

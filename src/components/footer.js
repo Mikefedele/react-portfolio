@@ -33,7 +33,7 @@ export default function Footer() {
           </IconContext.Provider>
         </a>
 
-        <a href="www.linkedin.com/in/mike-fedele">
+        <a href="https://www.linkedin.com/in/mike-fedele">
           <IconContext.Provider value={{ size: "2em" }}>
             <i style={textDec}>
               {" "}
