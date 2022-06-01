@@ -4,20 +4,25 @@ import emailjs from "@emailjs/browser";
 // import Button from "react-bootstrap/Button";
 import Stack from "react-bootstrap/Stack";
 const formStyle = { display: "block" };
-const divStyle = {  margin: "0 auto", backgroundImage: 'linear-gradient(white, black)', minHeight: '100vh', width: "80%", color: "black"};
-let nameValue = ""
+const divStyle = {
+  margin: "0 auto",
+  backgroundImage: "linear-gradient(white, black)",
+  minHeight: "100vh",
+  width: "80%",
+  color: "black",
+};
+let nameValue = "";
 
 export default function Contact() {
   const form = useRef();
 
   const blur = () => {
     if (nameValue.value) {
-      return
+      return;
     } else {
-      <p>Input field can't be left blank</p>
+      <p>Input field can't be left blank</p>;
     }
-    
-  }
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -30,7 +35,7 @@ export default function Contact() {
       )
       .then(
         (result) => {
-          alert('Email Sent')
+          alert("Email Sent");
           nameValue.value = "";
           console.log(result.text);
         },
@@ -46,18 +51,16 @@ export default function Contact() {
       <form ref={form} onSubmit={sendEmail} style={formStyle} onBlur={blur}>
         <Stack gap={1} className="col-md-5 mx-auto">
           <label>Name</label>
-          <input type="text" name="user_name" onBlur={blur}/>
+          <input type="text" name="user_name" onBlur={blur} />
           <label>Email</label>
           <input type="email" name="user_email" onBlur={blur} />
           <label>Message</label>
-          <textarea name="message" onBlur={blur}/>
+          <textarea name="message" onBlur={blur} />
           <input type="submit" value="Send" />
-        </Stack>        
+        </Stack>
       </form>
 
-    
-    <div>{blur}</div>
-
+      <div>{blur}</div>
 
       {/* <Form ref={form} onSubmit={sendEmail}>
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">

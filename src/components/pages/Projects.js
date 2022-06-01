@@ -6,6 +6,7 @@ import mealPlan from "../images/mealPlanner.png";
 import sched from "../images/noteApp.png";
 import submit from "../images/submitRocket.png";
 import jate from "../images/jate.png";
+import paws from "../images/paws.png"
 
 const divStyle = { width: "80%", margin: "0 auto" };
 const tempStyle = {
@@ -29,11 +30,17 @@ export default function Blog() {
       deployedLink: "https://watch.screencastify.com/v/16c3DsNf7iGHcedQ85W9",
       codeLink: "https://github.com/Mikefedele/socialNetworkAPI",
     },
+    // {
+    //   title: "Submit Rocket",
+    //   img: submit,
+    //   deployedLink: "https://submit-rocket.herokuapp.com/",
+    //   codeLink: "https://github.com/Mikefedele/SubmitRocket",
+    // },
     {
-      title: "Submit Rocket",
-      img: submit,
-      deployedLink: "https://submit-rocket.herokuapp.com/",
-      codeLink: "https://github.com/Mikefedele/SubmitRocket",
+      title: "Paw Patroller",
+      img: paws,
+      deployedLink: "https://vast-beach-07886.herokuapp.com/",
+      codeLink: "https://github.com/Mikefedele/paw-patroller"
     },
     {
       title: "Note Taker App",

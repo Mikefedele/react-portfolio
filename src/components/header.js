@@ -12,6 +12,7 @@ const headerStyle = {
   backgroundImage: "linear-gradient(white, black)",
   marginBottom: "10px",
   borderRadius: "10px",
+  // display: "inline"
 };
 const titleStyle = {
   textAlign: "right",
