@@ -10,6 +10,7 @@ const divStyle = {
   minHeight: "100vh",
   width: "80%",
   color: "black",
+  borderRadius: "10px"
 };
 let nameValue = "";
 
