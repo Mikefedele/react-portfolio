@@ -61,7 +61,9 @@ export default function Contact() {
         </Stack>
       </form>
 
-      <div>{blur}</div>
+      <div style={{padding: "30px"}}>
+        <h5>Email: FullstackFedele@gmail.com</h5>
+      </div>
 
       {/* <Form ref={form} onSubmit={sendEmail}>
       <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
