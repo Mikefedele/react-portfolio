@@ -11,7 +11,7 @@ import Col from "react-bootstrap/Col";
 import { Carousel } from "react-bootstrap";
 
 const divStyle = { width: "80%", margin: "0 auto" };
-const carStyle = { padding: "20px" };
+const carStyle = { padding: "20px"} ;
 
 export default function Home() {
   return (
@@ -25,7 +25,7 @@ export default function Home() {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src= {meal2}
+                src= {codeBG}
                 alt="First slide"
               />
               <Carousel.Caption>
@@ -50,7 +50,7 @@ export default function Home() {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src= {codeBG}
+                src= {meal2}
                 alt="Third slide"
               />
 
